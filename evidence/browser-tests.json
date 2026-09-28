@@ -1,0 +1,697 @@
+{
+  "environment": {
+    "browser": "Chromium 153.0.8010.0",
+    "renderer": "Canvas2D/software",
+    "input": "synthetic",
+    "spark_runtime": false,
+    "navigation": "set_content of unchanged standalone HTML, NOT HTTP hosting"
+  },
+  "checks": [
+    {
+      "name": "Exact generated adapter booted with both mock tracking slots",
+      "pass": true
+    },
+    {
+      "name": "Renderer draws all four shipped GLB models",
+      "pass": true
+    },
+    {
+      "name": "All 30 animated nodes contain numeric rotations",
+      "pass": true
+    },
+    {
+      "name": "Time changes adapter-driven finger angles AND rendered pixels",
+      "pass": true
+    },
+    {
+      "name": "Intensity control affects the real adapter output",
+      "pass": true
+    },
+    {
+      "name": "Yaw changes the projected image of the same GLB geometry",
+      "pass": true
+    },
+    {
+      "name": "Losing both hand detections hides both rigs, not the horn",
+      "pass": true
+    },
+    {
+      "name": "Losing the face hides the horn, not independently tracked hands",
+      "pass": true
+    },
+    {
+      "name": "Reacquisition restores visibility without reboot",
+      "pass": true
+    },
+    {
+      "name": "Unsupported second slot degrades to one visible hand",
+      "pass": true
+    },
+    {
+      "name": "Missing imported node produces a diagnostic error and hides graphics",
+      "pass": true
+    },
+    {
+      "name": "Provenance label is visibly included in screenshots",
+      "pass": true
+    },
+    {
+      "name": "No HTTP or HTTPS requests were made",
+      "pass": true
+    },
+    {
+      "name": "Mobile layout has no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "No uncaught JavaScript errors",
+      "pass": true
+    }
+  ],
+  "states": {
+    "debug-01-ready": {
+      "runtime": "our reactive mock; NOT Meta Spark",
+      "status": "ready",
+      "seconds": 1.25,
+      "ticks": 8,
+      "faces": 1,
+      "hands": 2,
+      "hornVisible": true,
+      "handVisible": [
+        true,
+        true
+      ],
+      "fingerAngles": [
+        [
+          [
+            0.9680000000000001,
+            0.11600000000000002,
+            0.13726175300751534
+          ],
+          [
+            0.2107126083731344,
+            0.1614252167462688,
+            0.13838359009125895
+          ],
+          [
+            0.03452091740611052,
+            0.26904183481222105,
+            0.23642290934011695
+          ],
+          [
+            -0.12452304652014318,
+            0.37095390695971364,
+            0.3695261367744226
+          ],
+          [
+            -0.39856774150535756,
+            0.4028645169892848,
+            0.4537176757854082
+          ]
+        ],
+        [
+          [
+            1.0177507764050038,
+            0.21550155281000757,
+            0.18196296486059427
+          ],
+          [
+            0.29468626453532354,
+            0.32937252907064707,
+            0.3092157367036462
+          ],
+          [
+            0.09973798760126143,
+            0.39947597520252287,
+            0.4256070006132282
+          ],
+          [
+            -0.11920838936385492,
+            0.38158322127229016,
+            0.4577048344995498
+          ],
+          [
+            -0.4565085453498277,
+            0.28698290930034454,
+            0.3852585291768901
+          ]
+        ]
+      ],
+      "enabledSlots": [
+        0,
+        1
+      ],
+      "logs": [
+        "SH READY: animated hand slots = 0, 1. This is puppet motion, not finger tracking."
+      ],
+      "triangles": 1020,
+      "renderer": "Canvas2D/software"
+    },
+    "debug-02-animation": {
+      "runtime": "our reactive mock; NOT Meta Spark",
+      "status": "ready",
+      "seconds": 2.5,
+      "ticks": 49,
+      "faces": 1,
+      "hands": 2,
+      "hornVisible": true,
+      "handVisible": [
+        true,
+        true
+      ],
+      "fingerAngles": [
+        [
+          [
+            1.04,
+            0.26000000000000006,
+            0.3574222815078534
+          ],
+          [
+            0.20751425882565844,
+            0.1550285176513169,
+            0.2239853059497463
+          ],
+          [
+            -0.041857924446835545,
+            0.1162841511063289,
+            0.13345919454669364
+          ],
+          [
+            -0.22589452726190565,
+            0.1682109454761887,
+            0.1429573949609256
+          ],
+          [
+            -0.4609760071833702,
+            0.27804798563325966,
+            0.24648743757416428
+          ]
+        ],
+        [
+          [
+            0.971523930826749,
+            0.12304786165349793,
+            0.16505177867441712
+          ],
+          [
+            0.1969059190368418,
+            0.13381183807368358,
+            0.12488441601768333
+          ],
+          [
+            0.012094328124130398,
+            0.22418865624826081,
+            0.19015124258422766
+          ],
+          [
+            -0.14142047076151215,
+            0.33715905847697575,
+            0.31967503971951705
+          ],
+          [
+            -0.3992753179475344,
+            0.40144936410493126,
+            0.4317384941086857
+          ]
+        ]
+      ],
+      "enabledSlots": [
+        0,
+        1
+      ],
+      "logs": [
+        "SH READY: animated hand slots = 0, 1. This is puppet motion, not finger tracking."
+      ],
+      "triangles": 1020,
+      "renderer": "Canvas2D/software"
+    },
+    "debug-03-side": {
+      "runtime": "our reactive mock; NOT Meta Spark",
+      "status": "ready",
+      "seconds": 1.25,
+      "ticks": 129,
+      "faces": 1,
+      "hands": 2,
+      "hornVisible": true,
+      "handVisible": [
+        true,
+        true
+      ],
+      "fingerAngles": [
+        [
+          [
+            0.9680000000000001,
+            0.11600000000000002,
+            0.13726175300751534
+          ],
+          [
+            0.2107126083731344,
+            0.1614252167462688,
+            0.13838359009125895
+          ],
+          [
+            0.03452091740611052,
+            0.26904183481222105,
+            0.23642290934011695
+          ],
+          [
+            -0.12452304652014318,
+            0.37095390695971364,
+            0.3695261367744226
+          ],
+          [
+            -0.39856774150535756,
+            0.4028645169892848,
+            0.4537176757854082
+          ]
+        ],
+        [
+          [
+            1.0177507764050038,
+            0.21550155281000757,
+            0.18196296486059427
+          ],
+          [
+            0.29468626453532354,
+            0.32937252907064707,
+            0.3092157367036462
+          ],
+          [
+            0.09973798760126143,
+            0.39947597520252287,
+            0.4256070006132282
+          ],
+          [
+            -0.11920838936385492,
+            0.38158322127229016,
+            0.4577048344995498
+          ],
+          [
+            -0.4565085453498277,
+            0.28698290930034454,
+            0.3852585291768901
+          ]
+        ]
+      ],
+      "enabledSlots": [
+        0,
+        1
+      ],
+      "logs": [
+        "SH READY: animated hand slots = 0, 1. This is puppet motion, not finger tracking."
+      ],
+      "triangles": 1020,
+      "renderer": "Canvas2D/software"
+    },
+    "debug-04-hands-lost": {
+      "runtime": "our reactive mock; NOT Meta Spark",
+      "status": "ready",
+      "seconds": 1.25,
+      "ticks": 200,
+      "faces": 1,
+      "hands": 0,
+      "hornVisible": true,
+      "handVisible": [
+        false,
+        false
+      ],
+      "fingerAngles": [
+        [
+          [
+            0.9680000000000001,
+            0.11600000000000002,
+            0.13726175300751534
+          ],
+          [
+            0.2107126083731344,
+            0.1614252167462688,
+            0.13838359009125895
+          ],
+          [
+            0.03452091740611052,
+            0.26904183481222105,
+            0.23642290934011695
+          ],
+          [
+            -0.12452304652014318,
+            0.37095390695971364,
+            0.3695261367744226
+          ],
+          [
+            -0.39856774150535756,
+            0.4028645169892848,
+            0.4537176757854082
+          ]
+        ],
+        [
+          [
+            1.0177507764050038,
+            0.21550155281000757,
+            0.18196296486059427
+          ],
+          [
+            0.29468626453532354,
+            0.32937252907064707,
+            0.3092157367036462
+          ],
+          [
+            0.09973798760126143,
+            0.39947597520252287,
+            0.4256070006132282
+          ],
+          [
+            -0.11920838936385492,
+            0.38158322127229016,
+            0.4577048344995498
+          ],
+          [
+            -0.4565085453498277,
+            0.28698290930034454,
+            0.3852585291768901
+          ]
+        ]
+      ],
+      "enabledSlots": [
+        0,
+        1
+      ],
+      "logs": [
+        "SH READY: animated hand slots = 0, 1. This is puppet motion, not finger tracking."
+      ],
+      "triangles": 956,
+      "renderer": "Canvas2D/software"
+    },
+    "debug-05-face-lost": {
+      "runtime": "our reactive mock; NOT Meta Spark",
+      "status": "ready",
+      "seconds": 1.25,
+      "ticks": 228,
+      "faces": 0,
+      "hands": 2,
+      "hornVisible": false,
+      "handVisible": [
+        true,
+        true
+      ],
+      "fingerAngles": [
+        [
+          [
+            0.9680000000000001,
+            0.11600000000000002,
+            0.13726175300751534
+          ],
+          [
+            0.2107126083731344,
+            0.1614252167462688,
+            0.13838359009125895
+          ],
+          [
+            0.03452091740611052,
+            0.26904183481222105,
+            0.23642290934011695
+          ],
+          [
+            -0.12452304652014318,
+            0.37095390695971364,
+            0.3695261367744226
+          ],
+          [
+            -0.39856774150535756,
+            0.4028645169892848,
+            0.4537176757854082
+          ]
+        ],
+        [
+          [
+            1.0177507764050038,
+            0.21550155281000757,
+            0.18196296486059427
+          ],
+          [
+            0.29468626453532354,
+            0.32937252907064707,
+            0.3092157367036462
+          ],
+          [
+            0.09973798760126143,
+            0.39947597520252287,
+            0.4256070006132282
+          ],
+          [
+            -0.11920838936385492,
+            0.38158322127229016,
+            0.4577048344995498
+          ],
+          [
+            -0.4565085453498277,
+            0.28698290930034454,
+            0.3852585291768901
+          ]
+        ]
+      ],
+      "enabledSlots": [
+        0,
+        1
+      ],
+      "logs": [
+        "SH READY: animated hand slots = 0, 1. This is puppet motion, not finger tracking."
+      ],
+      "triangles": 64,
+      "renderer": "Canvas2D/software"
+    },
+    "debug-06-single-slot": {
+      "runtime": "our reactive mock; NOT Meta Spark",
+      "status": "ready",
+      "seconds": 1.25,
+      "ticks": 4,
+      "faces": 1,
+      "hands": 2,
+      "hornVisible": true,
+      "handVisible": [
+        true,
+        false
+      ],
+      "fingerAngles": [
+        [
+          [
+            0.9680000000000001,
+            0.11600000000000002,
+            0.13726175300751534
+          ],
+          [
+            0.2107126083731344,
+            0.1614252167462688,
+            0.13838359009125895
+          ],
+          [
+            0.03452091740611052,
+            0.26904183481222105,
+            0.23642290934011695
+          ],
+          [
+            -0.12452304652014318,
+            0.37095390695971364,
+            0.3695261367744226
+          ],
+          [
+            -0.39856774150535756,
+            0.4028645169892848,
+            0.4537176757854082
+          ]
+        ],
+        [
+          [
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null
+          ]
+        ]
+      ],
+      "enabledSlots": [
+        0
+      ],
+      "logs": [
+        "SH WARNING: hand slot 1 unavailable: Mock: second slot disabled",
+        "SH READY: animated hand slots = 0. This is puppet motion, not finger tracking."
+      ],
+      "triangles": 988,
+      "renderer": "Canvas2D/software"
+    },
+    "debug-07-missing-node": {
+      "runtime": "our reactive mock; NOT Meta Spark",
+      "status": "error",
+      "seconds": 1.25,
+      "ticks": 4,
+      "faces": 1,
+      "hands": 2,
+      "hornVisible": false,
+      "handVisible": [
+        false,
+        false
+      ],
+      "fingerAngles": [
+        [
+          [
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          [
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null
+          ],
+          [
+            null,
+            null,
+            null
+          ]
+        ]
+      ],
+      "enabledSlots": [],
+      "logs": [
+        "SH ERROR: Scene is incomplete. Missing: SH_hand0_index_1"
+      ],
+      "triangles": 352,
+      "renderer": "Canvas2D/software"
+    },
+    "debug-08-mobile": {
+      "runtime": "our reactive mock; NOT Meta Spark",
+      "status": "ready",
+      "seconds": 1.25,
+      "ticks": 8,
+      "faces": 1,
+      "hands": 2,
+      "hornVisible": true,
+      "handVisible": [
+        true,
+        true
+      ],
+      "fingerAngles": [
+        [
+          [
+            0.9680000000000001,
+            0.11600000000000002,
+            0.13726175300751534
+          ],
+          [
+            0.2107126083731344,
+            0.1614252167462688,
+            0.13838359009125895
+          ],
+          [
+            0.03452091740611052,
+            0.26904183481222105,
+            0.23642290934011695
+          ],
+          [
+            -0.12452304652014318,
+            0.37095390695971364,
+            0.3695261367744226
+          ],
+          [
+            -0.39856774150535756,
+            0.4028645169892848,
+            0.4537176757854082
+          ]
+        ],
+        [
+          [
+            1.0177507764050038,
+            0.21550155281000757,
+            0.18196296486059427
+          ],
+          [
+            0.29468626453532354,
+            0.32937252907064707,
+            0.3092157367036462
+          ],
+          [
+            0.09973798760126143,
+            0.39947597520252287,
+            0.4256070006132282
+          ],
+          [
+            -0.11920838936385492,
+            0.38158322127229016,
+            0.4577048344995498
+          ],
+          [
+            -0.4565085453498277,
+            0.28698290930034454,
+            0.3852585291768901
+          ]
+        ]
+      ],
+      "enabledSlots": [
+        0,
+        1
+      ],
+      "logs": [
+        "SH READY: animated hand slots = 0, 1. This is puppet motion, not finger tracking."
+      ],
+      "triangles": 1020,
+      "renderer": "Canvas2D/software"
+    }
+  },
+  "errors": [],
+  "http_requests": [],
+  "source_sha256": "6f3a839593887929cd05a8f1e54e58dfb9e69f8495138f92b4ba45552dfa6a1d"
+}

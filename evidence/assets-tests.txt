@@ -1,0 +1,12 @@
+test_buffer_ranges (__main__.Assets.test_buffer_ranges) ... ok
+test_embedded_pngs (__main__.Assets.test_embedded_pngs) ... ok
+test_finite_positions (__main__.Assets.test_finite_positions) ... ok
+test_four_containers (__main__.Assets.test_four_containers) ... ok
+test_indices (__main__.Assets.test_indices) ... ok
+test_joint_names (__main__.Assets.test_joint_names) ... ok
+test_total_triangles (__main__.Assets.test_total_triangles) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.002s
+
+OK
